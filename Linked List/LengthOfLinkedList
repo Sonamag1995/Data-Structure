@@ -1,0 +1,16 @@
+import java.util.*;
+
+/**
+ * class LLNode {
+ *   int val;
+ *   LLNode next;
+ * }
+ */
+class Solution {
+    public int solve(LLNode node) {
+        if(node == null){
+            return 0;
+        }
+        return 1+ solve(node.next);
+    }
+}
